@@ -568,6 +568,7 @@ header .iconic {
 /* footer */
 
 .container-4 {
+    display:flex;
     width: 100%;
     background-color: black;
 }
