@@ -1,0 +1,580 @@
+html {
+    max-height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/*Header nav*/
+
+header {
+    display: flex;
+    z-index: 100;
+    width: 100%;
+    background-color: black;
+}
+
+header .content {
+    display: flex;
+    align-items: center;
+    padding: 1.875rem;
+}
+
+header .Logo {
+    flex: 1;
+    font-size: 1rem;
+    font-family: "Merriweather", sans-serif;
+    color: white;
+    text-shadow: 1px 1px black;
+    text-transform: uppercase;
+    letter-spacing: 0.15rem;
+    display: inline-block;
+}
+
+header .navigation ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.navigation li {
+    display: flex;
+    padding: 0.75rem;
+    list-style-type: none;
+    font-size: 1rem;
+    font-family: "Merriweather", sans-serif;
+    line-height: 1.6;
+}
+
+a:link{
+    color: white;
+    text-shadow: 1px 1px black;
+    text-decoration: none;
+}
+
+a:visited{
+    color: coral;
+    text-shadow: 1px 1px black;
+}
+
+a:hover{
+    color: green;
+}
+
+a:active{
+    color: gold;
+}
+
+a {
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.15em;
+    display: inline-block;
+    padding: 15px 20px;
+    position: relative;
+  }
+
+  a:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #fff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+  
+  a:hover:after { 
+    width: 100%; 
+    left: 0; 
+  }
+header .icon {
+    width: 1rem;
+    padding-left: .75rem;
+}
+
+header .iconic {
+    width: 3rem;
+    height: 3rem;
+    align-items: center;
+    padding-right: .75rem;
+}
+
+
+/*Main*/
+
+.main {
+    display: flex;
+    width: 100%;
+    background-image: url(Resources/Images/pexels-irina-iriser-1086584.jpg);
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.main-content{
+    display: inline;
+    text-shadow: 1px 1px black;
+    color: white;
+    padding: 3.75rem;
+    justify-content: center;
+    align-items: center;
+    filter: brightness(100%);
+}
+
+
+.discover{
+    display: flex;
+    font-style: italic;
+    display: inline;
+}
+
+.mission-quote{
+    display: flex;
+    margin-left: 42%;
+    font-style: italic;
+    line-height: 1.3;
+}
+
+.achieve {
+    display: flex;
+    font-family: "Merriweather";
+    font-size: 1.563rem;
+}
+
+/*Conservation*/
+
+.projects {
+    display: flex;
+    z-index: 100;
+    width: 100%;
+    background: linear-gradient(#03051a , #030b41);
+}
+
+.row ul{
+    display: flex;
+}
+
+.projects li{
+    list-style: none;
+    font-size: 1rem;
+    font-family: "Merriweather";
+    line-height: 1.6;
+    color: coral;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.15em;
+    display: inline-block;
+    padding: 15px 100px;
+    position: relative;
+    text-align: left;
+}
+
+@media only screen and (max-width: 1150px) {
+    .projects li{
+        width: 100%;
+        font-size: 10px;
+        padding: 10px 10px;
+        text-align: center;
+        justify-content: center;
+        }
+
+}
+
+.split {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: auto;
+    background:linear-gradient(#030b41 , #03051a) ;
+}
+
+.container {
+    display: flex;
+    margin: 0px auto;
+    padding-top: 30px;
+    width: 70%;
+    align-items: center;
+    justify-content: center;
+}
+
+.img {
+    max-width: 320px;
+    height: auto;
+    border: 3px solid black;
+    border-radius: 50px;
+    margin-right: 40px;
+    display: grid;
+}
+
+.save {
+    width: 50%;
+    height: auto;
+    margin: 0;
+    padding-left: 10px;
+    display: grid;
+}
+
+.save p {
+    font-family: "Merriweather";
+    font-size: 1.25rem;
+    color: white;
+    text-shadow: black 1px;
+    display: grid;
+}
+
+.split-1{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+}
+
+.container-1 {
+    display: flex;
+    margin: 15px auto;
+    width: 70%;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-1 {
+    width: 250px;
+    height: 200px;
+    border: 3px solid black;
+    border-radius: 50px;
+    margin-left: 40px;
+}
+
+.save-1 {
+    width: 50%;
+    height: auto;
+    margin: 0;
+    padding-left: 10px;
+}
+
+.save-1 p {
+    font-family: "Merriweather";
+    font-size: 1.25rem;
+    color: white;
+    text-shadow: black 1px;
+}
+
+.split-2{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    margin: 0;
+    padding-bottom: 30px;
+}
+
+.container-2 {
+    display: flex;
+    margin: 15px auto;
+    width: 70%;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-2 {
+    max-width: 320px;
+    height: auto;
+    border: 3px solid black;
+    border-radius: 50px;
+    margin-right: 40px;
+}
+
+.save-2 {
+    width: 50%;
+    height: auto;
+    margin: 0;
+    padding-left: 10px;
+}
+
+.save-2 p {
+    font-family: "Merriweather";
+    font-size: 1.25rem;
+    color: white;
+    text-shadow: black 1px;
+}
+
+@media only screen and (max-width: 1150px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .save {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .img {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .save p {
+        display: flex;
+        width: 100%;
+        text-align: center;
+        margin: 20px 60px 80px 60px;
+        font-size: 15px;
+    }
+
+}
+@media only screen and (max-width: 1150px) {
+    .container-1 {
+        flex-direction: column;
+    }
+
+    .save-1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .img-1 {
+        display: none;
+        }
+
+    .save-1 p {
+        display: flex;
+        width: 100%;
+        text-align: center;
+        margin: 20px 60px 80px 60px;
+        font-size: 15px;
+    }
+
+}
+
+@media only screen and (max-width: 1150px) {
+    .container-2 {
+        flex-direction: column;
+    }
+
+    .save-2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .img-2 {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .save-2 p {
+        display: flex;
+        width: 100%;
+        text-align: center;
+        margin: 20px 60px 80px 60px;
+        font-size: 15px;
+    }
+
+}
+/*Price*/
+
+#help {
+    display: flex;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    background-color: #03051a;
+    text-decoration: underline;
+    margin: 0;
+    padding: 0;
+}
+
+.price{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    box-sizing: border-box;
+    width: 100%;
+    height: auto;
+    background:linear-gradient(#03051a , #030b41) ;
+    padding-top: 2rem;
+}
+
+.price-1{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    box-sizing: border-box;
+    width: 100%;
+    height: auto;
+}
+
+.options {
+    width: 200px;
+    height: 200px;
+    background-image: url(Resources/Images/pexels-matt-hardy-1533720.jpg);
+    color: black;
+    text-shadow: 1px 1px white;
+    font-size: 25px;
+    border-radius: 20px;
+    margin: 10px;
+}
+
+.text{
+    padding-top: 50px;
+    text-align: center;
+    justify-content: center;
+    line-height: 20px;
+}
+
+@media only screen and (max-width: 1150px) {
+    #price {
+        flex-direction: column;
+    }
+
+    .price {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .price-1 {
+       flex-direction: column;
+    }
+
+    .options{
+        display: flex;
+    }
+
+    .text {
+        display: flex;
+        width: 100%;
+        text-align: center;
+        margin: 20px 60px 80px 60px;
+        font-size: 15px;
+    }
+
+}
+
+/*team*/
+
+.container-3{
+    max-width: 100%;
+    margin: 0px 0px;
+    color: black;
+    float: left;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+    align-items: center;
+    justify-content: center;
+    background-image: url(Resources/Images/pexels-pixabay-270873.jpg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+
+.heading {
+    margin: 0;
+    padding: 20px;
+    font: 60px;
+    color: white;
+    text-align: center;
+    background: linear-gradient(#030b41 , #03051a);
+    background-size: cover;
+}
+
+.heading span {
+    font-style: italic;
+    font-size: 30px;
+}
+
+.profiles{
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 80px;
+}
+
+.profile {
+    flex-basis: 260px;
+}
+
+.profile .profile-img {
+    height: 260px;
+    width: 260px;
+    border-radius: 50%;
+    filter: grayscale(100%);
+    cursor: pointer;
+    transition: 400ms;
+}
+
+.profile:hover .profile-img{
+    filter: grayscale(0);
+}
+
+.user-name {
+    margin-top: 30px;
+    font-size: 35px;
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px black;
+}
+
+.profile h5{
+    font-size: 18px;
+    font-weight: 100;
+    letter-spacing: 3px;
+    color: white;
+    text-shadow: 1px 1px black;
+    text-align: center;
+}
+
+.profile p {
+    font-size: 16px;
+    margin-top: 20px;
+    text-align: justify;
+}
+
+@media only screen and (max-width: 1150px) {
+    .profiles {
+        flex-direction: column;
+    }
+
+    .profile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile p {
+        text-align: center;
+        margin: 20px 60px 80px 60px;
+        font-size: 20px;
+    }
+
+}
+
+/* footer */
+
+.container-4 {
+    width: 100%;
+    background-color: black;
+}
+
+.copy{
+    display: inline;
+    text-align: center;
+    justify-content: center;
+    color: white;
+}
