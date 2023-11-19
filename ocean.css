@@ -484,6 +484,7 @@ header .iconic {
     background-image: url(assets/css/pexels-pixabay-270873.jpg);
     background-position: bottom;
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .heading {
